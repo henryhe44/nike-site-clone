@@ -2,6 +2,7 @@
 Color Palette
 Primary:        #FFFFFF
 Secondary:      #F5F5F5
+Inactive:       #969696
 Text:           #DBDBDB
 Footer:         #111111
 Social Media:   #7E7E7E
@@ -10,3 +11,88 @@ Primary Text:   'Oxygen'
 Secondary:      'Roboto Condensed' OR 'Oswald'
 Tetriary Text:  'Carrois Gothic SC'
 */
+
+.nav-top {
+    margin-top: -10px;
+    margin-left: -10px;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+}
+
+.nav-top ul {
+    background: #FFFFFF;
+    list-style: none;
+    display: flex;
+}
+
+.nav-top-left, .nav-top-right {
+    height: 40px;
+    width: 50vw;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.nav-top-left ul {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin-left: -32px;
+}
+
+.nav-top-left .li-box {
+    height: 30px;
+    width: auto;
+    padding: 5px 0;
+    border-right: 1px solid #E5E5E5;
+}
+
+.nav-top-left li {
+    margin-top: 1px;
+    padding: 5px 25px;
+}
+
+.nav-top-left #nikeplus {
+    font: 0.8rem 'Oxygen';
+    margin-top: 4px;
+}
+
+.nav-top-left #jordan {
+    width: 20px;
+    height: auto;
+}
+
+.nav-top-left #hurley {
+    width: 62.5px;
+    height: auto;
+    margin-top: -20px;
+}
+
+.nav-top-left #converse {
+    width: 80px;
+    height: auto;
+    margin-top: 6px;
+}
+
+.nav-top-right ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.nav-top-right .li-box {
+    height: 30px;
+    width: auto;
+    padding: 5px 0;
+}
+
+.nav-top-right li {
+    font: 0.75rem 'Oxygen';
+    margin-top: 4px;
+    padding: 5px 15px;
+}
+
+.li-box i {
+    font-size: 1rem;
+}
