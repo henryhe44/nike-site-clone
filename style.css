@@ -7,8 +7,8 @@ Text:           #DBDBDB
 Footer:         #111111
 Social Media:   #7E7E7E
 
-Primary Text:   'Oxygen'
-Secondary:      'Roboto Condensed' OR 'Oswald'
+Primary Text:   "Helvetica Neue", Helvetica, sans-serif;
+Secondary text: 'Roboto Condensed' OR 'Oswald'
 Tetriary Text:  'Carrois Gothic SC'
 */
 
@@ -28,7 +28,7 @@ Tetriary Text:  'Carrois Gothic SC'
 
 .nav-top-left, .nav-top-right {
     height: 40px;
-    width: 50vw;
+    flex: 6;
     border-bottom: 1px solid #E5E5E5;
 }
 
@@ -47,12 +47,13 @@ Tetriary Text:  'Carrois Gothic SC'
 }
 
 .nav-top-left li {
-    margin-top: 1px;
+    margin-top: 0px;
     padding: 5px 25px;
 }
 
 .nav-top-left #nikeplus {
-    font: 0.8rem 'Oxygen';
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.8rem;
     margin-top: 4px;
 }
 
@@ -88,11 +89,85 @@ Tetriary Text:  'Carrois Gothic SC'
 }
 
 .nav-top-right li {
-    font: 0.75rem 'Oxygen';
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.75rem;
     margin-top: 4px;
     padding: 5px 15px;
 }
 
-.li-box i {
+.li-box li i {
     font-size: 1rem;
+    margin-top: -4px;
+}
+
+.nav-bottom {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    margin-left: -10px;
+}
+
+.nav-bottom-left, .nav-bottom-center, .nav-bottom-right {
+    height: 75px;
+    flex: 4;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.nav-bottom-left img {
+    margin-left: 15px;
+    width: 75px;
+    height: auto;
+}
+
+.nav-bottom-center ul {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 25px;
+    list-style: none;
+    font-family: 'Carrois Gothic SC';
+    font-size: 0.90rem;
+    font-weight: 800;
+}
+
+.nav-bottom-center li {
+    padding-left: 35px;
+}
+
+.nav-bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.nav-bottom-right button {
+    border: none;
+    padding: 10px 10px;
+    font-size: 1rem;
+    color: #373737;
+    background: #FFFFFF;
+}
+
+.nav-bottom-right button:focus {
+    outline:none;
+}
+
+.nav-bottom-right input {
+    width: 150px;
+    border: none;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: #7E7E7E;
+    background: #FFFFFF;
+}
+
+.nav-bottom-right input:focus {
+    outline:none;
+}
+
+.search-box {
+    display: flex;
+    height: 40px;
+    border: 1px solid #E5E5E5;
 }
