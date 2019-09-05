@@ -248,3 +248,107 @@ body {
     top: 775px;
     right: 125px;
 }
+
+.bw-collage {
+    position: relative;
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bw-collage h3 {
+    font: 1.5rem "Helvetica";
+    font-weight: 500;
+    position: relative;
+    left: 50px;
+}
+
+.bw-collage img {
+    width: 93.50vw;
+    height: auto;
+    align-self: center;
+}
+
+.bw-collage .img-blurb {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bw-collage .img-blurb h1 {
+    font: 3.5rem "Oswald";
+    font-weight: 1000;
+}
+
+.bw-collage .img-blurb p {
+    font: 1rem "Helvetica";
+    position: relative;
+    top: -48px;
+}
+
+.bw-collage .btn-row button {
+    font: 1rem "Helvetica";
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.btn-row {
+    position: relative;
+    top: -50px;
+}
+
+#shop-btn {
+    height: 40px;
+    width: 90px;
+    background: black;
+    color: white;
+}
+
+#watch-btn {
+    height: 40px;
+    width: 110px;
+    background: white;
+    color: black;
+}
+
+#watch-btn i {
+    font-size: 0.8rem;
+}
+
+.img-scroll {
+    display: flex;
+    overflow: auto;
+}
+
+.featured .img-scroll img {
+    width: 30vw;
+    height: auto;
+}
+
+/* tweak scrollbar later at: https://forum.webflow.com/t/custom-css-horizontal-scrollbar/45599 */
+
+/*change the thinkness of the scrollbar here*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ /*add a shadow to the scrollbar here*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/*this is the little scrolly dealio in the bar*/ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #4353ff;
+    height: 3px;
+}
+/*nobody needs this little scrollbar corner, I mean really, get rid of it haha*/  
+  ::-webkit-scrollbar-corner       { display: none; height: 0px; width: 0px; }
