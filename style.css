@@ -385,8 +385,6 @@ body {
 }
 
 .trending-imgs {
-    align-self: center;
-    justify-self: center;
     display: flex;
     width: 93vw;
     justify-content: space-between;
@@ -415,4 +413,59 @@ body {
     border: none;
     background: #FFFFFF;
     color: #373737;
+}
+
+#bestseller-head {
+    font: 1.5rem "Helvetica";
+    font-weight: 500;
+    position: relative;
+    left: 50px;
+}
+
+.bestseller {
+    justify-self: center;
+    align-self: center;
+}
+
+.bestseller-imgs {
+    display: flex;
+    width: 93vw;
+    justify-content: space-between;
+}
+
+.bestseller-imgs img {
+    width: 30vw;
+    height: auto;
+}
+
+.bestseller-imgs h5 {
+    font: 1rem 'Helvetica';
+    position: relative; 
+    top: -16px;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-around;
+    font: 1rem "Helvetica";
+}
+
+.selection-col p {
+    margin-bottom: 32px;
+}
+
+.selection-col ul {
+    list-style: none;
+    position: relative;
+    left: -38px;
+}
+
+.selection-col ul li {
+    margin-bottom: 32px;
+    opacity: 0.5;
+}
+
+.selection-col ul li:hover {
+    opacity: 1;
+    transition: 0.2s ease-in-out;
 }
