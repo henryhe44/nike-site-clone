@@ -14,15 +14,14 @@ Tetriary Text:  Carrois Gothic SC
 
 body {
     overflow-x: hidden;
+    margin: 0;
 }
 
 .nav-top {
-    margin-top: -10px;
     margin-left: -10px;
     height: 40px;
     width: 100vw;
     display: flex;
-    opacity: 0.5;
 }
 
 .nav-top ul {
@@ -33,7 +32,7 @@ body {
 
 .nav-top-left, .nav-top-right {
     height: 40px;
-    flex: 6;
+    flex: 1;
     border-bottom: 1px solid #E5E5E5;
 }
 
@@ -54,6 +53,15 @@ body {
 .nav-top-left li {
     margin-top: 0px;
     padding: 5px 25px;
+}
+
+.li-box {
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+}
+  
+.li-box:hover {
+    opacity: 1;
 }
 
 .nav-top-left #nikeplus {
@@ -111,10 +119,17 @@ body {
     display: flex;
 }
 
-.nav-bottom-left, .nav-bottom-center, .nav-bottom-right {
+.nav-bottom-left, 
+.nav-bottom-center, 
+.nav-bottom-right {
     height: 75px;
-    flex: 4;
+    flex: 1;
     border-bottom: 1px solid #E5E5E5;
+}
+
+.nav-bottom-center {
+    flex: 2;
+    align-content: center;
 }
 
 .nav-bottom-left img {
@@ -126,12 +141,14 @@ body {
 .nav-bottom-center ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
     margin-left: 25px;
     list-style: none;
     font-family: 'Carrois Gothic SC';
     font-size: 0.90rem;
     font-weight: 800;
+    padding: 0;
 }
 
 .nav-bottom-center li {
