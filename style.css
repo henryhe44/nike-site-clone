@@ -248,7 +248,7 @@ body {
     font-family: "Oswald";
     margin-top: -15px;
     margin-bottom: 10px;
-    font-stretch: 50%;
+    letter-spacing: -3px;
     font-weight: 1000;
     font-size: 4rem;
 }
@@ -470,4 +470,98 @@ body {
 .selection-col ul li:hover {
     opacity: 1;
     transition: 0.2s ease-in-out;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 24px;
+    background: #111111;
+}
+
+footer .footer-top {
+    width: 80vw;
+    position: relative;
+    top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-list-1 ul, .footer-list-2 ul, .footer-list-3 ul {
+    list-style: none;
+}
+
+.footer-list-1 li, .footer-list-2 li, .footer-list-3 li {
+    padding-bottom: 12px;
+}
+
+.footer-list-1, .footer-list-2 p, .footer-list-3 p {
+    font: 0.8rem 'Carrois Gothic SC';
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+
+.footer-list-2 li:hover, .footer-list-3 li:hover {
+    color: #F5F5F5;
+}
+
+.footer-list-2 ul, .footer-list-3 ul {
+    position: relative;
+    left: -40px;
+    font: 0.8rem "Helvetica";
+    color: #7E7E7E;
+}
+
+.footer-icons {
+    position: relative;
+    display: flex;
+}
+
+.icon-wrap {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background: #7E7E7E;
+    margin-left: 9px;
+}
+
+.icon-wrap:hover {
+    background: #F5F5F5;
+}
+
+.footer-icons i {
+    position: relative;
+    top: 3px;
+    left: 5px;
+    color: #111111;
+}
+
+.footer-icons .fa-facebook-f {
+    position: relative;
+    top: 3px;
+    left: 7px;
+}
+
+.footer-bottom {
+    width: 70vw;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    font: 0.6rem "Helvetica";
+    color: #7E7E7E;
+    background: #111111;
+    border-top: 1px solid #222222;
+}
+
+.footer-bottom-right {
+    display: flex;
+}
+
+.footer-bottom-right p {
+    margin-right: 32px;
 }
