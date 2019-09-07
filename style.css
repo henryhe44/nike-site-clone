@@ -479,6 +479,7 @@ footer {
     justify-content: center;
     position: relative;
     top: 24px;
+    margin-bottom: -132px;
     background: #111111;
 }
 
