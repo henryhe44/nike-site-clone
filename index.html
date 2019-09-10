@@ -105,7 +105,6 @@
             </div>
         </div>
         <div class='popup' >
-
             <button class='popup-handle-close' >Close Popup</button>
         </div>
     </div>
@@ -170,6 +169,11 @@
                 <li>Huarache</li>
                 <li>VaporMax</li>
                 <li>Jordan 1</li>
+                <li class="hidden-list-items hide">Air Max 90</li>
+                <li class="hidden-list-items hide">Air Max 95</li>
+                <li class="hidden-list-items hide">Air Max 97</li>
+                <li class="hidden-list-items hide">Air Max 270</li>
+                <li class="hidden-list-items hide">Air Max 720</li>
             </ul>
         </div>
         <div class="selection-col">
@@ -179,6 +183,11 @@
                 <li>Custom Shoes</li>
                 <li>Running Shoes</li>
                 <li>Basketball Shoes</li>
+                <li class="hidden-list-items hide">Training Shoes</li>
+                <li class="hidden-list-items hide">Jordan Shoes</li>
+                <li class="hidden-list-items hide">Soccer Cleats</li>
+                <li class="hidden-list-items hide">Football Cleats</li>
+                <li class="hidden-list-items hide">Gold Shoes</li>
             </ul>
         </div>
         <div class="selection-col">
@@ -188,6 +197,11 @@
                 <li>Windbreakers</li>
                 <li>Tracksuits</li>
                 <li>Sports Bras</li>
+                <li class="hidden-list-items hide">Plus Size Clothing</li>
+                <li class="hidden-list-items hide">Pants & Tights</li>
+                <li class="hidden-list-items hide">Joggers & Sweatpants</li>
+                <li class="hidden-list-items hide">Shorts</li>
+                <li class="hidden-list-items hide">Socks</li>
             </ul>
         </div>
         <div class="selection-col">
@@ -197,6 +211,11 @@
                 <li>Kids' Backpacks</li>
                 <li>Kids Shoes</li>
                 <li>Kids Basketball Shoes</li>
+                <li class="hidden-list-items hide">Kids' Running Shoes</li>
+                <li class="hidden-list-items hide">Kids' Jordan Shoes</li>
+                <li class="hidden-list-items hide">Kids' Clothing</li>
+                <li class="hidden-list-items hide">Kids' Socks</li>
+                <li class="hidden-list-items hide">Kids' Hats</li>
             </ul>
         </div>
     </div>
@@ -256,20 +275,30 @@
 
 
     
-    <script>
+<script>
+
+    // Video Button 
     const watchButton = document.querySelector('#watch-btn');
     const closePopupButton = document.querySelector('.popup-handle-close');
     const popup = document.querySelector('.popup');
-
     const togglePopup = () => {
-            popup.classList.toggle('open')
-}
-
+        popup.classList.toggle('open');
+    }
     watchButton.addEventListener('click', togglePopup);
-
     closePopupButton.addEventListener('click', togglePopup);    
 
-
+    // Slide-out effect 
+    const selection = document.querySelector(".selection");
+    const hidden_li_list = document.querySelectorAll(".hidden-list-items");
+    console.log(hidden_li_list);
+    const toggleHide = () => {
+        for(let index=0; index<hidden_li_list.length; index++) {
+            let list_item = hidden_li_list[index]
+            list_item.classList.toggle('hide');
+        }
+    }
+    selection.addEventListener("mouseover",toggleHide);
+    selection.addEventListener("mouseout",toggleHide);
 
 </script>
 </body>

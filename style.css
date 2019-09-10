@@ -512,10 +512,22 @@ body {
 
 .selection {
     position: relative;
-    top: 24px;
+    top: 12px;
+    margin-bottom: -300px;
+    padding-bottom: 12px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font: 1rem "Helvetica";
+    
+    transition: margin-bottom 300ms 0.3s;
+}
+.selection:hover {
+    margin-bottom: 0px;
+}
+
+.selection-col {
+    padding: 0px 64px 0px 64px;
+    width: 196px;
 }
 
 .selection-col p {
@@ -533,10 +545,20 @@ body {
     opacity: 0.5;
 }
 
+.hidden-list-items.hide {
+    /* Note to self: try using smoke and mirrors instead of display none*/
+    /* In fact, I should reserve the display for when I want to try drop down menus*/
+    /* display: none; */
+    transition: opacity 300ms;
+    opacity: 0;
+}
+
 .selection-col ul li:hover {
     opacity: 1;
     transition: 0.2s ease-in-out;
 }
+
+
 
 footer {
     display: flex;
