@@ -104,6 +104,10 @@
                 <button id="watch-btn">Watch <i class="fa fa-play"></i></button>
             </div>
         </div>
+        <div class='popup' >
+
+            <button class='popup-handle-close' >Close Popup</button>
+        </div>
     </div>
 
     <div class="featured">
@@ -247,8 +251,27 @@
                 <p>Nike Privacy Policy</p>
             </div>
         </div>
+       
     </footer>
 
+
+    
+    <script>
+    const watchButton = document.querySelector('#watch-btn');
+    const closePopupButton = document.querySelector('.popup-handle-close');
+    const popup = document.querySelector('.popup');
+
+    const togglePopup = () => {
+            popup.classList.toggle('open')
+}
+
+    watchButton.addEventListener('click', togglePopup);
+
+    closePopupButton.addEventListener('click', togglePopup);    
+
+
+
+</script>
 </body>
 
 </html>
