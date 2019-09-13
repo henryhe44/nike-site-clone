@@ -200,7 +200,7 @@ body {
     list-style: none;
     font-family: 'Carrois Gothic SC';
     font-size: 0.90rem;
-    font-weight: 800;
+    font-weight: 1000;
     padding: 0;
 }
 
@@ -245,6 +245,45 @@ body {
     height: 40px;
     border: 1px solid #CCCCCC;
     border-radius: 1px
+}
+
+.dropdown {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    top: 115px;
+    background: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0px 64px 0px 64px;
+}
+
+.dropdown li {
+    padding-bottom: 16px;
+}
+
+.dropdown-style-1 {
+    font-family: 'Carrois Gothic SC';
+    font-size: 0.90rem;
+    font-weight: 1000;
+}
+
+.dropdown-style-2 {
+    font-family: 'Helvetica';
+    font-size: 0.90rem;
+}
+
+.dropdown.collapse {
+    height: 0px;
+    z-index: -1;
 }
 
 .advertisement {
@@ -431,8 +470,6 @@ body {
     width: 33vw;
 }
 
-
-
 .trending-wrap {
     position: relative;
     top: 50px;
@@ -557,8 +594,6 @@ body {
     opacity: 1;
     transition: 0.2s ease-in-out;
 }
-
-
 
 footer {
     display: flex;
