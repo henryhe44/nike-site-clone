@@ -367,7 +367,10 @@
             </div>
         </div>
         <div class='popup' >
-            <button class='popup-handle-close' >Close Popup</button>
+            <!-- Fiddle with video ratio later at https://www.youtube.com/watch?v=OOy764mDtiA -->
+            <button class='popup-handle-close'><i class="fa fa-times-circle"></i></button>
+            <iframe src="https://www.youtube.com/embed/gYL9p3aD9fQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -552,7 +555,7 @@
             }
         }
         const toggleDropdown = (i) => {
-            collapseAll();
+            // collapseAll();
             dropdown[i].classList.toggle('collapse');
         }
         for(let item of navbar_items) {
