@@ -271,23 +271,7 @@ body {
     border-radius: 1px
 }
 
-.dropdown {
-
-    /* position: absolute; */
-    /* width: 100vw; */
-    /* height: auto; */
-    /* top: 115px; */
-    background: #FFFFFF;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    z-index: 9;
-
-    display: flex;
-    justify-content: center;
-    display: none;
-}
-
-.absolute-dropdown{
+.absolute-dropdown {
     position: absolute;
     left: 0;
     top: 120px;
@@ -296,14 +280,16 @@ body {
     background: white;
     transform: translatey(-130%);
     transition: 0.2s;
+    display: flex;
+    justify-content: center;
 }
 
-.dropdown ul {
+.absolute-dropdown ul {
     list-style: none;
     padding: 0px 64px 0px 64px;
 }
 
-.dropdown li {
+.absolute-dropdown li {
     padding-bottom: 16px;
 }
 
@@ -320,8 +306,6 @@ body {
 
 .absolute-dropdown.collapse {
     transform: translatey(0);
-    /* height: 0px; */
-    /* z-index: -1; */
 }
 
 .advertisement {
