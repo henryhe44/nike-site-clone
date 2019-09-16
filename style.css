@@ -97,9 +97,7 @@ body {
 }
 
 .nav-top-left, .nav-top-right {
-
     flex: 1;
-    
     z-index: 9;
     background: white;
 }
@@ -274,7 +272,7 @@ body {
 .absolute-dropdown {
     position: absolute;
     left: 0;
-    top: 120px;
+    top: 115px;
     width: 100vw;
     z-index: 1;
     background: white;
@@ -304,8 +302,18 @@ body {
     font-size: 0.90rem;
 }
 
-.absolute-dropdown.collapse {
+.absolute-dropdown.expand {
     transform: translatey(0);
+}
+
+.collapse-trigger {
+    position: absolute;
+    left: 0;
+    top: 115px;
+    width: 100vw;
+    height: 648px;
+    z-index: 10;
+    opacity: 0;
 }
 
 .advertisement {
