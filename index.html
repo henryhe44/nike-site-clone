@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
+
+
 <body>
     <div class="navbar">
         <div class="nav-top">
@@ -53,11 +55,11 @@
             </div>
             <div class="nav-bottom-center">
                 <ul>
-                    <li>NEW RELEASES</li>
-                    <li>MEN</li>
-                    <li>WOMEN</li>
-                    <li>KIDS</li>
-                    <li>CUSTOMIZE</li>
+                    <li id='trigger-new_releases' >NEW RELEASES</li>
+                    <li id='trigger-men'>MEN</li>
+                    <li id='trigger-women'>WOMEN</li>
+                    <li id='trigger-kids'>KIDS</li>
+                    <li id='trigger-customize'>CUSTOMIZE</li>
                 </ul>
             </div>
             <div class="nav-bottom-right">
@@ -68,12 +70,108 @@
                     <input type="text" placeholder="Search">
                 </div>
             </div>
+            <div class='absolute-dropdown new_releases'>
+                <ul class="dropdown-style-1">
+                    <li>SHOP ALL NEW ARRIVALS</li>
+                    <li>JUST IN</li>
+                    <li>MEMBER EXCLUSIVES</li>
+                    <li>SNKRS LAUNCH CALENDAR</li>
+                    <li>NEW TO SALE</li>
+                </ul>
+                <ul class="dropdown-style-2">
+                    <li class="dropdown-style-1">NEW FOR MEN</li>
+                    <li>Shoes</li>
+                    <li>Clothing</li>
+                    <li>Equipment</li>
+                    <li>Shop All New</li>
+                </ul>
+                <ul class="dropdown-style-2">
+                    <li class="dropdown-style-1">NEW FOR WOMEN</li>
+                    <li>Shoes</li>
+                    <li>Clothing</li>
+                    <li>Equipment</li>
+                    <li>Shop All New</li>
+                </ul>
+                <ul class="dropdown-style-2">
+                    <li class="dropdown-style-1">NEW FOR KIDS</li>
+                    <li>Shoes</li>
+                    <li>Clothing</li>
+                    <li>Equipment</li>
+                    <li>Shop All New</li>
+                </ul>
+            </div> 
+            <div class='absolute-dropdown men'>
+                <ul class="dropdown-style-1">
+                    <li>NEW RELEASES</li>
+                    <li>MEMBER EXCLUSIVES</li>
+                    <li>BEST SELLERS</li>
+                    <li>FALL ESSENTIALS</li>
+                    <li>TAILGATING SEASON</li>
+                    <li>TOP PICKS $100 & UNDER</li>
+                    <li>GENDER NEUTRAL</li>
+                    <li>SALE</li>
+                </ul>
+                <ul class="dropdown-style-2">
+                    <li class="dropdown-style-1">SHOES</li>
+                    <li>SNKRS Launch Calendar</li>
+                    <li>Lifestyle</li>
+                    <li>Running</li>
+                    <li>Training & Gym</li>
+                    <li>Basketball</li>
+                    <li>Jordan</li>
+                    <li>Football</li>
+                    <li>Soccer</li>
+                    <li>Baseball</li>
+                    <li>Golf</li>
+                    <li>Skateboarding</li>
+                    <li>Tennis</li>
+                    <li>Slides & Sandals</li>
+                    <li>Easy On and Off</li>
+                    <li>All Shoes</li>
+                </ul>
+                <ul class="dropdown-style-2">
+                    <li class="dropdown-style-1">CLOTHING</li>
+                    <li>Tops & T-Shirts</li>
+                    <li>Shorts</li>
+                    <li>Polos</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Jackets & Vests</li>
+                    <li>Pants & Tights</li>
+                    <li>Surf & Swimwear</li>
+                    <li>Compression & Baselayer</li>
+                    <li>Socks & Underwear</li>
+                    <li>Big & Tall</li>
+                    <li>All Clothing</li>
+                    <li class="dropdown-style-1">ACCESORIES & EQUIPMENT</li>
+                    <li>Bags & Backpacks</li>
+                    <li>Apple Watch Nike+</li>
+                    <li>Sunglasses</li>
+                </ul>
+                <ul class="dropdown-style-2">
+                    <li class="dropdown-style-1">SHOP COLLECTION</li>
+                    <li>Golf</li>
+                    <li>Jordan</li>
+                    <li>Soccer</li>
+                    <li>Running</li>
+                    <li>Basketball</li>
+                    <li>NikeLab</li>
+                    <li>Training & Gym</li>
+                    <li>Yoga</li>
+                    <li>Football</li>
+                    <li>Baseball</li>
+                    <li>Tennis</li>
+                    <li>Nike Sportswear</li>
+                    <li>ACG</li>
+                    <li>Skateboarding</li>
+                    <li>Fan Gear</li>
+                </ul>
+            </div> 
             <!-- nav-bottom end -->
         </div>
             <!-- navbar end -->
     </div>
 
-    <div class="dropdown collapse">
+    <!-- <div class="dropdown collapse">
         <ul class="dropdown-style-1">
             <li>SHOP ALL NEW ARRIVALS</li>
             <li>JUST IN</li>
@@ -326,12 +424,12 @@
             <li>Skateboarding</li>
             <li>Softball</li>
         </ul>
-        <ul class="dropdown-style-2">
+        <ul class="dropdown-style-2"> 
             <li class="dropdown-style-1">AIR MAX BY YOU</li>
             <li class="dropdown-style-1">NIKE BY YOU KIDS</li>
             <li>Boys</li>
             <li>Girls</li>
-        </ul>
+        </ul>-->
     </div>
 
     <div class="advertisement">
@@ -544,28 +642,43 @@
     <script>
 
         // Dropdown menu
-        const navbar_items = [...document.querySelectorAll(".nav-bottom-center li")];
-        const dropdown = [...document.querySelectorAll(".dropdown")];
-        const collapseAll = () => {
-            for(let current_dropdown of dropdown) {
-                if (current_dropdown.classList.contains("collapse")) 
-                    continue;
-                else 
-                    current_dropdown.classList.add("collapse");
+        // const navbar_items = [...document.querySelectorAll(".nav-bottom-center li")];
+        // const dropdown = [...document.querySelectorAll(".dropdown")];
+        // const collapseAll = () => {
+        //     for(let current_dropdown of dropdown) {
+        //         if (current_dropdown.classList.contains("collapse")) 
+        //             continue;
+        //         else 
+        //             current_dropdown.classList.add("collapse");
+        //     }
+        // }
+        // const toggleDropdown = (i) => {
+        //     // collapseAll();
+        //     dropdown[i].classList.toggle('collapse');
+        // }
+        // for(let item of navbar_items) {
+        //     let index = navbar_items.indexOf(item);
+        //     item.addEventListener("mouseover", () => {toggleDropdown(index)});
+        // }
+        // for(let current_dropdown of dropdown) {
+        //     let index = dropdown.indexOf(current_dropdown);
+        //     current_dropdown.addEventListener("mouseout",() => {toggleDropdown(index)});
+        // }
+
+        const triggers = document.querySelectorAll('.nav-bottom-center li');
+
+        
+
+        triggers.forEach(trigger => {
+            const ids =  trigger.id.split('-');
+            const triggerId = ids[ids.length - 1];
+            const toggleDropdown = () => {
+                document.querySelector(`.absolute-dropdown.${triggerId}`).classList.toggle('collapse');
             }
-        }
-        const toggleDropdown = (i) => {
-            // collapseAll();
-            dropdown[i].classList.toggle('collapse');
-        }
-        for(let item of navbar_items) {
-            let index = navbar_items.indexOf(item);
-            item.addEventListener("mouseover", () => {toggleDropdown(index)});
-        }
-        for(let current_dropdown of dropdown) {
-            let index = dropdown.indexOf(current_dropdown);
-            current_dropdown.addEventListener("mouseout",() => {toggleDropdown(index)});
-        }
+            trigger.addEventListener('mouseover', toggleDropdown);
+            trigger.addEventListener('mouseout', toggleDropdown)
+        })
+
 
         // Video Button 
         const watchButton = document.querySelector('#watch-btn');
